@@ -38,6 +38,6 @@ public class SelectChar : MonoBehaviour
     void OnDeselect()
     {
         anim.SetBool("isWalking", false);
-        sr.color = new Color(0.1f, 1f, 1f);
+        sr.color = new Color(1f, 1f, 1f,0.3f);
     }
 }

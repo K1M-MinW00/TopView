@@ -306,7 +306,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.7042097, g: 0.70550764, b: 0.7075472, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 1000858296}
   - component: {fileID: 1000858295}
   - component: {fileID: 1000858294}
-  - component: {fileID: 1000858293}
+  - component: {fileID: 1000858298}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Untagged
@@ -515,22 +515,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1000858293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000858292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc95651df482b64cabd963d626ad398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: 1
-  chars:
-  - {fileID: 1416949153}
-  - {fileID: 1000858293}
 --- !u!61 &1000858294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -664,6 +648,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000858298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000858292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc95651df482b64cabd963d626ad398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: 1
+  chars:
+  - {fileID: 1416949153}
+  - {fileID: 1000858298}
 --- !u!1 &1378173770
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +990,7 @@ MonoBehaviour:
   character: 0
   chars:
   - {fileID: 1416949153}
-  - {fileID: 1000858293}
+  - {fileID: 1000858298}
 --- !u!1 &1636799513
 GameObject:
   m_ObjectHideFlags: 0
