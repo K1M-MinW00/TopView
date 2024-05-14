@@ -5,11 +5,11 @@ using UnityEngine;
 public class ReSpawn : MonoBehaviour
 {
     public GameObject[] charPrefabs;
-    public GameObject player;
+    // public GameObject character;
 
     void Start()
     {
-        player = Instantiate(charPrefabs[(int)DataManager.instance.currentCharacter]);
-        player.transform.position = transform.position;
+        DataManager.instance.player = Instantiate(charPrefabs[(int)DataManager.instance.currentCharacter]);
+        DataManager.instance.player.transform.position = transform.position;
     }
 }

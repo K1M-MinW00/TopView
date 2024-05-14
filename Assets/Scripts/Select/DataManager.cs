@@ -15,6 +15,7 @@ public class DataManager : MonoBehaviour
     public string playerName;
     public Character currentCharacter;
 
+    public GameObject player;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -22,6 +23,7 @@ public class DataManager : MonoBehaviour
             return;
         DontDestroyOnLoad(gameObject);
     }
+
     public void ClickJoinBtn()
     {
         SceneManager.LoadScene("MainScene");

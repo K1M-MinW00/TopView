@@ -9,16 +9,6 @@ public class JoinBtn : MonoBehaviour
     public InputField playerNameInput;
     public string playerName;
 
-    void Awake()
-    {
-        playerName = playerNameInput.GetComponent<InputField>().text;
-        joinBtn = GetComponentInChildren<Button>();
-    }
-
-    private void Start()
-    {
-        joinBtn.interactable = false;
-    }
 
     public void Check()
     {
